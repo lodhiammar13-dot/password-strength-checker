@@ -13,6 +13,12 @@ def check_strength_password(input):
     else:
         return "Weak"
 def main():
+        st.set_page_config(
+        page_title="Password strength checker",
+        page_icon="🔒",
+        layout="centered",
+        initial_sidebar_state="auto"
+    )
     st.title("🔒Password strength checker")
     st.write("This app checks the strength of your password.")
     password = st.text_input("Enter your password:", type="password")
@@ -32,4 +38,5 @@ def main():
                 st.error("Your password is weak. Try using a longer password with a mix of uppercase, lowercase, numbers, and special characters.")
 if __name__ == "__main__":
     main()
+
 
