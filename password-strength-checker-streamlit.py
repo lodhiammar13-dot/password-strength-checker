@@ -35,3 +35,6 @@ def main():
                 st.warning("Your password is medium strength. Consider adding more characters or a mix of character types.")
             else:
                 st.error("Your password is weak. Try using a longer password with a mix of uppercase, lowercase, numbers, and special characters.")
+
+if __name__ == "__main__":
+    main()
