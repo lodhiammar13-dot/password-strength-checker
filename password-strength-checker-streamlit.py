@@ -30,5 +30,6 @@ def main():
             else:
 
                 st.error("Your password is weak. Try using a longer password with a mix of uppercase, lowercase, numbers, and special characters.")
-if __name__ == '__main__':
-    main():
+if __name__ == "__main__":
+    main()
+
