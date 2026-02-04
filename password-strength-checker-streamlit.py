@@ -13,8 +13,8 @@ def check_strength_password(input):
     else:
         return "Weak"
 def main():
-        st.set_page_config(
-        page_title="Password strength checker",
+    st.set_page_config(
+        page_title="Password Strength Checker",
         page_icon="🔒",
         layout="centered",
         initial_sidebar_state="auto"
@@ -34,9 +34,4 @@ def main():
             elif strength == "Medium":
                 st.warning("Your password is medium strength. Consider adding more characters or a mix of character types.")
             else:
-
                 st.error("Your password is weak. Try using a longer password with a mix of uppercase, lowercase, numbers, and special characters.")
-if __name__ == "__main__":
-    main()
-
-
